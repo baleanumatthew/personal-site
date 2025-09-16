@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Baleanu — Personal Site</title>
+  <meta name="description" content="Personal website — portfolio, projects, and contact." />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top glass">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#home">
+        <i class="bi bi-stars me-2"></i> Matthew
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Navigate</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center gap-2">
+            <button class="btn btn-outline-light btn-sm" id="themeToggle" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+            <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <p class="text-uppercase text-secondary mb-2">Hello! I’m</p>
+          <h1 class="display-5 fw-bold mb-3 reveal"><span>Matthew Baleanu</span></h1>
+          <p class="lead text-light-emphasis reveal" style="max-width: 56ch;">
+            Software engineer building music intelligence, GPS surveying tools, and embedded systems. I like turning messy data into elegant, fast, and useful products.
+          </p>
+          <div class="d-flex gap-2 mt-4 reveal">
+            <a href="#projects" class="btn btn-primary btn-lg"><i class="bi bi-rocket-takeoff me-2"></i>See projects</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg"><i class="bi bi-envelope me-2"></i>Contact</a>
+          </div>
+          <div class="d-flex gap-3 mt-4 reveal">
+            <a class="link-light text-decoration-none" href="https://github.com/baleanumatthew" aria-label="GitHub"><i class="bi bi-github fs-3"></i></a>
+            <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/matthew-baleanu/" aria-label="LinkedIn"><i class="bi bi-linkedin fs-3"></i></a>
+            <a class="link-light text-decoration-none" href="mailto:baleanumatthew1@gmail.com" aria-label="Email"><i class="bi bi-envelope-at fs-3"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center order-1 order-lg-2">
+          <div class="p-4 glass d-inline-block reveal">
+            <img class="avatar" src="./images/selfie.jpeg" alt="Matthew Profile" />
+            <p class="mt-3 mb-0">Based in Ontario, Canada</p>
+            <span class="badge rounded-pill text-bg-primary mt-2">Available for work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-semibold mb-3 reveal">About</h2>
+          <p class="lead text-light-emphasis reveal">I’m a builder at heart. Recent work spans a music recommender (GenreGuru), a grid-based GPS surveying app, and BLDC motor control on ESP32. I love clean architecture, thoughtful UI, and shipping.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="p-4 glass h-100">
+            <h5 class="mb-3"><i class="bi bi-box-seam me-2"></i>What I do</h5>
+            <ul class="mb-0">
+              <li>Full‑stack apps (React, Flask, PostgreSQL)</li>
+              <li>Audio DSP (tempo/key detection, HPSS, ML)</li>
+              <li>Embedded/robotics (ESP32, sensors, motor control)</li>
+              <li>Android (Jetpack Compose, USB serial)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="p-4 glass h-100">
+            <h5 class="mb-3"><i class="bi bi-trophy me-2"></i>Highlights</h5>
+            <ul class="mb-0">
+              <li>Designed a GPS surveying app with grid snapping & robust averaging</li>
+              <li>Built GenreGuru — spectral‑feature based music recommender</li>
+              <li>Created gesture‑based BLDC RPM control with magnetic encoder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-3">
+        <h2 class="fw-semibold mb-0 reveal">Projects</h2>
+        <a class="btn btn-outline-light btn-sm reveal" href="#">View all</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100 glass project-card">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="GenreGuru" />
+            <div class="card-body">
+              <h5 class="card-title">GenreGuru</h5>
+              <p class="card-text">Music recommender using spectral features (chroma, tempo, key), Flask API, and React frontend.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-primary">Python</span>
+                <span class="badge text-bg-secondary">Flask</span>
+                <span class="badge text-bg-secondary">React</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex gap-2">
+              <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-github me-1"></i>Code</a>
+              <a class="btn btn-primary btn-sm" href="#"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100 glass project-card">
+            <img src="https://images.unsplash.com/photo-1508898578281-774ac4893bd0?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="GPS Surveyor" />
+            <div class="card-body">
+              <h5 class="card-title">Grid GPS Surveyor</h5>
+              <p class="card-text">Offline terrain surveying app with grid snapping, 30s averaging, and session metadata.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-primary">Python</span>
+                <span class="badge text-bg-secondary">Tkinter</span>
+                <span class="badge text-bg-secondary">CSV</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex gap-2">
+              <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-github me-1"></i>Code</a>
+              <a class="btn btn-primary btn-sm" href="#"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100 glass project-card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="BLDC Controller" />
+            <div class="card-body">
+              <h5 class="card-title">BLDC Gesture Control</h5>
+              <p class="card-text">ESP32‑S3 + AS5600 encoder for gesture‑based RPM control via Dual FOC board.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-primary">C / Arduino</span>
+                <span class="badge text-bg-secondary">ESP32</span>
+              </div>
+            </div>
+            <div class="card-footer d-flex gap-2">
+              <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-github me-1"></i>Code</a>
+              <a class="btn btn-primary btn-sm" href="#"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="fw-semibold mb-4 reveal">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="p-4 glass h-100">
+            <h6 class="text-secondary">Languages & Frameworks</h6>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge rounded-pill text-bg-light text-dark">Python</span>
+              <span class="badge rounded-pill text-bg-light text-dark">C/C++</span>
+              <span class="badge rounded-pill text-bg-light text-dark">JavaScript/TypeScript</span>
+              <span class="badge rounded-pill text-bg-light text-dark">React</span>
+              <span class="badge rounded-pill text-bg-light text-dark">Flask</span>
+              <span class="badge rounded-pill text-bg-light text-dark">Kotlin</span>
+            </div>
+            <div class="progress mt-4" role="progressbar" aria-label="Skill coverage" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="p-4 glass h-100">
+            <h6 class="text-secondary">Tools</h6>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge rounded-pill text-bg-light text-dark">Git</span>
+              <span class="badge rounded-pill text-bg-light text-dark">PostgreSQL</span>
+              <span class="badge rounded-pill text-bg-light text-dark">Docker</span>
+              <span class="badge rounded-pill text-bg-light text-dark">SimpleFOC</span>
+              <span class="badge rounded-pill text-bg-light text-dark">librosa</span>
+            </div>
+            <div class="progress mt-4" role="progressbar" aria-label="Tooling" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="fw-semibold mb-4 reveal">Experience</h2>
+      <div class="glass p-4 reveal">
+        <div class="timeline">
+          <div class="position-relative ps-4 mb-4">
+            <div class="t-dot"></div>
+            <h6 class="mb-1">Software Engineering Intern · JDRF Electromag</h6>
+            <div class="small text-secondary">May 2023 — Aug 2024 · Toronto, ON</div>
+            <p class="mt-2 mb-0 text-light-emphasis">Built iOS apps, Python network validation tools, and embedded sensor code.</p>
+          </div>
+          <div class="position-relative ps-4 mb-4">
+            <div class="t-dot"></div>
+            <h6 class="mb-1">B.Eng. Software Engineering · McMaster University</h6>
+            <div class="small text-secondary">2019 — 2025 · Hamilton, ON</div>
+            <p class="mt-2 mb-0 text-light-emphasis">Focus on systems, DSP, and human‑centered product design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6 reveal">
+          <div class="h-100 p-4 glass">
+            <h2 class="fw-semibold mb-3">Let’s build something</h2>
+            <p class="text-light-emphasis">Want to collaborate or just say hi? Drop a message — I read everything.</p>
+            <form class="row g-3" onsubmit="event.preventDefault(); this.reset(); alert('Thanks! I\'ll get back to you soon.');">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Ada Lovelace" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Hello Matthew, I\'d like to chat about..." required></textarea>
+              </div>
+              <div class="col-12 d-grid d-sm-flex gap-2">
+                <button type="submit" class="btn btn-primary btn-lg flex-fill"><i class="bi bi-send me-2"></i>Send</button>
+                <a href="#" class="btn btn-outline-light btn-lg flex-fill"><i class="bi bi-file-earmark-person me-2"></i>Download résumé</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section pt-5 pb-4">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a class="link-muted text-decoration-none" href="#home">Home</a>
+        <a class="link-muted text-decoration-none" href="#projects">Projects</a>
+        <a class="link-muted text-decoration-none" href="#contact">Contact</a>
+      </div>
+      <p class="text-secondary small mb-0">© <span id="year"></span> Matthew Baleanu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Theme toggle (dark <-> light)
+    const toggleBtn = document.getElementById('themeToggle');
+    const htmlEl = document.documentElement;
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) htmlEl.setAttribute('data-bs-theme', savedTheme);
+    toggleBtn?.addEventListener('click', () => {
+      const next = htmlEl.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-bs-theme', next);
+      localStorage.setItem('theme', next);
+      toggleBtn.innerHTML = next === 'dark' ? '<i class="bi bi-moon-stars"></i>' : '<i class="bi bi-sun"></i>';
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple reveal-on-scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
